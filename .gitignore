@@ -1,0 +1,190 @@
+# The Fellowship of WordPress Agents - .gitignore
+
+# ============================================
+# WordPress Core Files
+# ============================================
+/wordpress/
+/wp-admin/
+/wp-includes/
+/wp-content/index.php
+/wp-content/themes/index.php
+/wp-content/plugins/index.php
+wp-*.php
+xmlrpc.php
+license.txt
+readme.html
+sitemap.xml
+sitemap.xml.gz
+
+# ============================================
+# WordPress Config & Sensitive Files
+# ============================================
+wp-config.php
+wp-config-*.php
+.htaccess
+.htpasswd
+error_log
+php_error.log
+
+# ============================================
+# WordPress Uploads & Cache
+# ============================================
+/wp-content/uploads/
+/wp-content/cache/
+/wp-content/backup*/
+/wp-content/backups/
+/wp-content/upgrade/
+/wp-content/ai1wm-backups/
+
+# ============================================
+# WordPress Plugins (exclude project plugins)
+# ============================================
+/wp-content/plugins/*
+!/wp-content/plugins/.gitkeep
+# Uncomment to include your custom plugins:
+# !/wp-content/plugins/your-custom-plugin/
+
+# ============================================
+# WordPress Themes (exclude project themes)
+# ============================================
+/wp-content/themes/twenty*/
+# Uncomment to include your custom theme:
+# !/wp-content/themes/your-custom-theme/
+
+# ============================================
+# Node.js & NPM
+# ============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log
+
+# ============================================
+# Composer
+# ============================================
+/vendor/
+composer.lock
+
+# ============================================
+# Build & Compiled Files
+# ============================================
+/dist/
+/build/
+*.min.css
+*.min.js
+*.map
+.sass-cache/
+.cache/
+
+# ============================================
+# IDE & Editor Files
+# ============================================
+.vscode/
+!.vscode/settings.json.example
+!.vscode/extensions.json.example
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+.DS_Store
+Thumbs.db
+
+# ============================================
+# Environment & Secrets
+# ============================================
+.env
+.env.local
+.env.*.local
+.env.production
+.env.staging
+*.key
+*.pem
+*.cert
+secrets/
+credentials.json
+
+# ============================================
+# Logs
+# ============================================
+*.log
+logs/
+error_log
+debug.log
+wp-content/debug.log
+
+# ============================================
+# Temporary & System Files
+# ============================================
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ============================================
+# Testing
+# ============================================
+/tests/coverage/
+/tests/results/
+.phpunit.result.cache
+phpunit.xml
+.pest/
+
+# ============================================
+# WooCommerce Specific
+# ============================================
+/wp-content/uploads/wc-logs/
+/wp-content/uploads/woocommerce_uploads/
+
+# ============================================
+# Project Specific (OUTPUT folder)
+# ============================================
+# If you want to exclude output/work files:
+/OUTPUT/
+/output/
+/TEMP/
+/temp/
+/WORK/
+/work/
+/KNOWLEDGE/
+/knowledge/
+/KNOWLEDGE\ /
+/knowledge\ /
+KNOWLEDGE\ /
+knowledge\ /
+/PROJECTS/
+/projects/
+
+# ============================================
+# Backup Files
+# ============================================
+*.sql
+*.sql.gz
+*.sql.zip
+*.tar.gz
+*.zip
+backups/
+backup/
+
+# ============================================
+# Claude Code Specific (Optional)
+# ============================================
+# Uncomment if you don't want to track Claude memory:
+# .claude/memory/
+
+# ============================================
+# Keep Empty Directories
+# ============================================
+!.gitkeep
